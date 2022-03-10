@@ -94,8 +94,30 @@ body {
 
 .register-page {
   .container {
-
+    padding-left: 200px;
   }
 
-  .objectives, .profile, .interests, .finish
+  .logo {
+    width: 68px;
+    height: 31px;
+    @include bg;
+    background-image: url('/img/sprite.svg#sprite--logo');
+  }
+
+  .icon-hub, .icon-objectives, .icon-profile, .icon-interests, .icon-finish {
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #E5E4E1;
+    box-sizing: border-box;
+    border-radius: 50px;
+  }
+
+  .icon-hub {
+    background: url('/img/sprite.svg#sprite--icons--user-tag');
+    @include bg;
+    background-size: 140%;
+  }
+
+  //.objectives, .profile, .interests, .finish
 }
