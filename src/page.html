@@ -7,11 +7,11 @@
 "favicon":"img/favicons/favicon",
 })
 
-<body>
-	<main class="register-page">
+<body class="register-page">
+	<header class="logo"></header>
+	<main>
 		<div class="container">
-			<div class="logo"></div>
-			<div class="path">
+			<section class="path">
 				<div class="icon-hub"></div>
 				<div class="line"></div>
 				<div class="icon-objectives"></div>
@@ -21,15 +21,53 @@
 				<div class="icon-interests"></div>
 				<div class="line"></div>
 				<div class="icon-finish"></div>
-			</div>
-			<div class="title"></div>
-			<div class="subtitle"></div>
+			</section>
+			
 
-			<div class="hub"></div>
-			<div class="objectives"></div>
-			<div class="profile"></div>
-			<div class="interests"></div>
-			<div class="finish"></div>
+			<section class="hub">
+				<div class="title">Which Hub Are You In?</div>
+				<div class="subtitle">We are active in major cities and we schedule meetings based on time zones. 
+					<br> Let us know your home base.</div>
+				<div class="search-bar">				
+					<input type="text" placeholder="Search.." name="search">
+					<img src="/img/sprite.svg#sprite--icons--search" alt="">
+				</div>
+				<div class="hubs">
+					<div class="hubs-title"></div>
+					<div class="hubs-list">
+						<div class="hub-item">
+							<img class="hub-icon" src="/img/sprite.svg#sprite--icons--austin" alt="">
+							<div class="form_radio">
+								<input id="austin" type="radio" name="radio" value="1">
+								<label for="austin">Austin</label>
+							</div>
+						</div>
+						<div class="hub-item">
+							<img class="hub-icon" src="/img/sprite.svg#sprite--icons--dallas" alt="">
+							<div class="form_radio">
+								<input id="dallas" type="radio" name="radio" value="2" checked>
+								<label for="dallas">Dallas</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="objectives">
+				<div class="title"></div>
+				<div class="subtitle"></div>
+			</section>
+			<section class="profile">
+				<div class="title"></div>
+				<div class="subtitle"></div>
+			</section>
+			<section class="interests">
+				<div class="title"></div>
+				<div class="subtitle"></div>
+			</section>
+			<section class="finish">
+				<div class="title"></div>
+				<div class="subtitle"></div>
+			</section>
 
 			<div class="next"></div>
 		</div>
