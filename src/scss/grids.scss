@@ -200,9 +200,17 @@ body {
     background: url('/img/sprite.svg#sprite--icons--radio-off') 0 0 no-repeat;
   }
 
-  .form_radio input[type=radio]:checked - label:before {
+  .form_radio input[type=radio]:checked + label:before {
     background: url('/img/sprite.svg#sprite--icons--radio-on') 0 0 no-repeat;
   }
 
-  //.objectives, .profile, .interests, .finish
+  .objectives, .profile, .interests, .finish {
+    display: none;
+  }
+
+  .next {
+    width: 140px;
+    height: 60px;
+    background: #EB3D35;
+  }
 }
