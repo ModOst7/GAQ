@@ -101,47 +101,73 @@ body {
   .logo {
     width: 68px;
     height: 31px;
+    margin-bottom: 89px;
     @include bg;
     background-image: url('/img/sprite.svg#sprite--logo');
   }
 
-  .icon-hub, .icon-objectives, .icon-profile, .icon-interests, .icon-finish {
-    width: 50px;
-    height: 50px;
-    background: #FFFFFF;
-    border: 2px solid #E5E4E1;
-    box-sizing: border-box;
-    border-radius: 50px;
+  .path {
+    display: flex;
+  }
+
+  .line {
+    width: 100px;
+    height: 2px;
+    background: #E5E4E1;
+    align-self: center;
+  }
+
+  .title {
+    margin-top: 60px;
+    font-style: normal;
+    font-weight: 494;
+    font-size: 50px;
+    line-height: 56px;
+    color: #051655;
+  }
+
+  .subtitle {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 375;
+    font-size: 20px;
+    line-height: 22px;
+    color: #747887;
   }
 
   .icon-hub {
     background: url('/img/sprite.svg#sprite--icons--location');
     @include bg;
-    background-size: 140%;
   }
 
   .icon-objectives {
     background: url('/img/sprite.svg#sprite--icons--crown');
     @include bg;
-    background-size: 140%;
   }
 
   .icon-profile {
     background: url('/img/sprite.svg#sprite--icons--frame');
     @include bg;
-    background-size: 140%;
   }
 
   .icon-interests {
     background: url('/img/sprite.svg#sprite--icons--heart');
     @include bg;
-    background-size: 140%;
   }
 
   .icon-finish {
     background: url('/img/sprite.svg#sprite--icons--user-tag');
     @include bg;
-    background-size: 140%;
+  }
+
+  .icon-hub, .icon-objectives, .icon-profile, .icon-interests, .icon-finish {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 2px solid #E5E4E1;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-size: 68%;
   }
 
   .search-bar {
