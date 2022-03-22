@@ -119,6 +119,42 @@ body {
     align-self: center;
   }
 
+  
+  .icon-hub {
+    background: url('/img/sprite.svg#sprite--icons--location');
+    @include bg;
+  }
+
+  .icon-objectives {
+    background: url('/img/sprite.svg#sprite--icons--crown');
+    @include bg;
+  }
+
+  .icon-profile {
+    background: url('/img/sprite.svg#sprite--icons--frame');
+    @include bg;
+  } 
+
+  .icon-interests {
+    background: url('/img/sprite.svg#sprite--icons--heart');
+    @include bg;
+  }
+
+  .icon-finish {
+    background: url('/img/sprite.svg#sprite--icons--user-tag');
+    @include bg;
+  }
+
+  .icon-hub, .icon-objectives, .icon-profile, .icon-interests, .icon-finish {
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 2px solid #E5E4E1;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-size: 68%;
+  }
+
   .title {
     margin-top: 60px;
     font-style: normal;
@@ -170,42 +206,10 @@ body {
   }
 
   .hubs-list {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 20px;
     margin-top: 20px;
-  }
-
-  .icon-hub {
-    background: url('/img/sprite.svg#sprite--icons--location');
-    @include bg;
-  }
-
-  .icon-objectives {
-    background: url('/img/sprite.svg#sprite--icons--crown');
-    @include bg;
-  }
-
-  .icon-profile {
-    background: url('/img/sprite.svg#sprite--icons--frame');
-    @include bg;
-  }
-
-  .icon-interests {
-    background: url('/img/sprite.svg#sprite--icons--heart');
-    @include bg;
-  }
-
-  .icon-finish {
-    background: url('/img/sprite.svg#sprite--icons--user-tag');
-    @include bg;
-  }
-
-  .icon-hub, .icon-objectives, .icon-profile, .icon-interests, .icon-finish {
-    width: 50px;
-    height: 50px;
-    background-color: #FFFFFF;
-    border: 2px solid #E5E4E1;
-    box-sizing: border-box;
-    border-radius: 50px;
-    background-size: 68%;
   }
 
 
@@ -240,6 +244,13 @@ body {
     margin-right: 0;
     line-height: 18px;
     user-select: none;
+
+    font-style: normal;
+font-weight: 494;
+font-size: 20px;
+line-height: 22px;
+
+color: #051655;
   }
   
   .form_radio label:after, .form_checkbox label:after {
