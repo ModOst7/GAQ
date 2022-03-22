@@ -160,6 +160,19 @@ body {
     padding-left: 64px;
   }
 
+  .hubs-title {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 494;
+    font-size: 25px;
+    line-height: 28px;
+    color: #051655;
+  }
+
+  .hubs-list {
+    margin-top: 20px;
+  }
+
   .icon-hub {
     background: url('/img/sprite.svg#sprite--icons--location');
     @include bg;
