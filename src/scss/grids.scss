@@ -223,11 +223,13 @@ body {
 
   .hub-icon, .objectives-icon {
     width: 10%;
+    margin-left: 20px;
   }
 
   .form_radio, .form_checkbox {
     width: 100%;
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
   }
 
@@ -236,6 +238,8 @@ body {
   }
 
   .form_radio label, .form_checkbox label {
+    display: flex;
+    justify-content: space-between;
     display: inline-block;
     width: 100%;
     cursor: pointer;
@@ -256,10 +260,13 @@ color: #051655;
   .form_radio label:after, .form_checkbox label:after {
     content: "";
     display: inline-block;
-    width: 17px;
-    height: 18px;
+    width: 26px;
+    height: 26px;
     position: absolute;
+    right: 0;
+    margin-right: 20px;
     background: url('/img/sprite.svg#sprite--icons--radio-off') 0 0 no-repeat;
+    
   }
 
   .form_radio input[type=radio]:checked + label:after, .form_checkbox input[type=checkbox]:checked + label:after {
